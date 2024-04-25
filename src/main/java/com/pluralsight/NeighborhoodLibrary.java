@@ -6,13 +6,11 @@ public class NeighborhoodLibrary {
 
     public static void main(String[] args) {
         Book[] books = new Book[5];
-        books[0] = new Book(1, "9781577314806", "The Power of Now: A Guide to Spiritual Enlightenment");
-        books[1] = new Book(2, "9781501111105", "Grit: The Power of Passion and Perseverance");
-        books[2] = new Book(3, "9781592408412",
-                "Daring Greatly: How the Courage to Be Vulnerable Transforms the Way We Live, Love, Parent, and Lead");
-        books[3] = new Book(4, "9780062457714",
-                "The Subtle Art of Not Giving a F*ck: A Counterintuitive Approach to Living a Good Life");
-        books[4] = new Book(5, "9781878424310", "The Four Agreements: A Practical Guide to Personal Freedom");
+        books[0] = new Book(1, "0531456", "Atomic Habits");
+        books[1] = new Book(2, "7777754", "7 Habits of Highly Efficient people");
+        books[2] = new Book(3, "11111189", "Think and Grow Rich");
+        books[3] = new Book(4, "12121212", "The Subtle Art of Not Giving a F*ck: A Counterintuitive Approach to Living a Good Life");
+        books[4] = new Book(5, "45237689", "48 Laws of Power");
 
         Scanner scanner = new Scanner(System.in);
 
@@ -27,7 +25,7 @@ public class NeighborhoodLibrary {
 
             int response = scanner.nextInt();
             scanner.nextLine(); // Consume newline
-            
+
 
             switch (response) {
 
@@ -72,7 +70,7 @@ public class NeighborhoodLibrary {
         }
     }
 
-    // Method to show checked out books
+    // Method showing checked out books
     public static void showCheckedOutBooks(Book[] books, Scanner scanner) {
         System.out.println("Checked Out Books:");
         for (Book book : books) {
@@ -113,4 +111,4 @@ public class NeighborhoodLibrary {
     }
 }
 
-}
+
